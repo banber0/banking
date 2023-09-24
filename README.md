@@ -23,34 +23,34 @@
 
 第一个源文件构造函数Account定义了一个主类，里面有四个方法
 
- //public Account(double bal){
-        balance = bal;
+          public Account(double bal){
+           balance = bal;
         }；
         
         在创建对象bal时用初始余额 ( )初始化帐户。
 
- //public double getBalance(){
-        return balance;
+          public double getBalance(){
+             return balance;
     }；
     
     该方法返回账户当前余额。
 
-  public boolean deposit(double amount){
-        balance = balance + amount;
-        return true;
+          public boolean deposit(double amount){
+              balance = balance + amount;
+              return true;
     }；
     
     允许您将指定amount的资金存入帐户。它会根据存款金额增加余额并返回true以指示存款成功。
 
-  //public boolean withdraw(double amount){
-        boolean result = true;
-        if(balance < amount){
-            result = false;
-        }else{
-            balance = balance - amount;
-        }
-        return result;
-    }
+         public boolean withdraw(double amount){
+              boolean result = true;
+             if(balance < amount){
+                result = false;
+             }else{
+                  balance = balance - amount;
+           }
+             return result;
+      }
     允许你从帐户中提取指定的金额。在允许提款之前，它会检查帐户是否有足够的余额。如果有足够的资金，则会amount从余额中扣除并返回true。否则返回false提示资金不足，提币不成功。
 
 第二个源文件Customer
