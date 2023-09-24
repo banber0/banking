@@ -17,6 +17,18 @@
 
 3.定义类的属性、方法
 
+##实验介绍
+
+该程序模拟了银行账户的取钱与存钱的细节过程
+
+##软件架构
+
+Account类  银行账户的组件，具有存款取款基本操作
+
+Customer类  表示银行客户的组件，包含客户的基本信息以及与之关联的账户
+
+TestBanking类  测试程序，演示用Account和Customer来进行银行交易
+
 ##实验步骤
 
 #程序三个源文件已经给出，在文件夹banking中。
@@ -95,6 +107,12 @@
             System.out.println("Withdraw 400.00:" + account.withdraw(400.00));
             System.out.println("Customer[" + customer.getLastName() + "，" + customer.getFirstName() + "] has a balance of " + account.getBalance());
             //将用户存钱取钱的细节打印出来，并且将余额也打印出来。
+#使用说明
+
+在java的环境中运行使用
+
+
+            
 
 
 
